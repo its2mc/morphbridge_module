@@ -4,7 +4,7 @@
   "description": "Resilient mesh network implementation using zmq sockets for inter protocol communication bridging",
   "main": "index.js",
   "scripts": {
-    "test": "cd ../../ && npm install express && npm install ws && npm install zmq && mkdir logs && node ../../tests/server.js&  node ../../http_node.js > http.txt& node ../../websocket_node.js > websocket.txt& node ../../tcp_node.js > tcp.txt& node ../../zmq_node.js > zmq.txt& node ../../sms_node.js > sms.txt&"
+    "test": "cd ../../ && npm install express && npm install ws && npm install zmq && mkdir logs && node ../../tests/server.js&"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   "author": "PhilMc <its2uraps@gmail.com> (https://github.com/its2mc/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/its2mc/MorphBridge/issues"
+    "url": "https://github.com/its2mc/morphbridge_module/issues"
   },
   "homepage": "https://github.com/its2mc/MorphBridge"
 }
