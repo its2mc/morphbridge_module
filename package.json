@@ -1,0 +1,33 @@
+{
+  "name": "morphbridge",
+  "version": "1.0.5",
+  "description": "Resilient mesh network implementation using zmq sockets for inter protocol communication bridging",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd ../../ && npm install express && npm install ws && npm install zmq && mkdir logs && node ../../tests/server.js&  node ../../http_node.js > http.txt& node ../../websocket_node.js > websocket.txt& node ../../tcp_node.js > tcp.txt& node ../../zmq_node.js > zmq.txt& node ../../sms_node.js > sms.txt&"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/its2mc/MorphBridge"
+  },
+  "dependencies": {
+    "zmq": "^2.11.1",
+    "winston": "^1.0.0"
+  },
+  "keywords": [
+    "MorphBridge",
+    "bridging",
+    "morph",
+    "iot",
+    "inter-protocol communication",
+    "mesh",
+    "mesh network",
+    "bridge"
+  ],
+  "author": "PhilMc <its2uraps@gmail.com> (https://github.com/its2mc/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/its2mc/MorphBridge/issues"
+  },
+  "homepage": "https://github.com/its2mc/MorphBridge"
+}
