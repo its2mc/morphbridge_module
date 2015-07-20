@@ -29,15 +29,15 @@
 // Import utils lib.. This includes the buffer object and
 // other helper tools that will be added on
 
-var _utils = require('./lib/_utils')._utils;
-_utils();
+var buffer_object = require('./lib/_utils')._buffer_object;
+
 // Import logger lib.. The logger has been revamped.
 var logger = require('./lib/logger').logger_lib();
 logger.init();
 module.exports.logger = logger;
 
 // Import channels lib... Includes the channels object
-var channels_obj = require('./lib/channels').channels_lib(logger);
+var channels_obj = require('./lib/channels').channels_lib(logger,buffer_object);
 module.exports.channels_obj = channels_obj;
 
 // Import comms lib.. This is the main library
