@@ -33,6 +33,7 @@ var _utils = require('./lib/_utils')._utils;
 _utils();
 // Import logger lib.. The logger has been revamped.
 var logger = require('./lib/logger').logger_lib();
+logger.init();
 module.exports.logger = logger;
 
 // Import channels lib... Includes the channels object

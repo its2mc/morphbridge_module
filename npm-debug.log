@@ -1,113 +1,25 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'E:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'publish' ]
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink E:\Program Files\nodejs\\node.exe
-5 verbose publish [ '.' ]
-6 verbose cache add [ '.', null ]
-7 verbose cache add name=undefined spec="." args=[".",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: '.',
-8 verbose parsed url   path: '.',
-8 verbose parsed url   href: '.' }
-9 silly lockFile 3a52ce78- .
-10 verbose lock . C:\Users\mc\AppData\Roaming\npm-cache\3a52ce78-.lock
-11 verbose tar pack [ 'C:\\Users\\mc\\AppData\\Roaming\\npm-cache\\morphbridge\\1.0.3\\package.tgz',
-11 verbose tar pack   '.' ]
-12 verbose tarball C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package.tgz
-13 verbose folder .
-14 info prepublish morphbridge@1.0.3
-15 silly lockFile 1f1177db-tar tar://.
-16 verbose lock tar://. C:\Users\mc\AppData\Roaming\npm-cache\1f1177db-tar.lock
-17 silly lockFile 6dd71f98-he-morphbridge-1-0-3-package-tgz tar://C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package.tgz
-18 verbose lock tar://C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package.tgz C:\Users\mc\AppData\Roaming\npm-cache\6dd71f98-he-morphbridge-1-0-3-package-tgz.lock
-19 silly lockFile 1f1177db-tar tar://.
-20 silly lockFile 1f1177db-tar tar://.
-21 silly lockFile 6dd71f98-he-morphbridge-1-0-3-package-tgz tar://C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package.tgz
-22 silly lockFile 6dd71f98-he-morphbridge-1-0-3-package-tgz tar://C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package.tgz
-23 silly lockFile 5041abf7--cache-morphbridge-1-0-3-package C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package
-24 verbose lock C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package C:\Users\mc\AppData\Roaming\npm-cache\5041abf7--cache-morphbridge-1-0-3-package.lock
-25 silly lockFile 5041abf7--cache-morphbridge-1-0-3-package C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package
-26 silly lockFile 5041abf7--cache-morphbridge-1-0-3-package C:\Users\mc\AppData\Roaming\npm-cache\morphbridge\1.0.3\package
-27 silly lockFile 3a52ce78- .
-28 silly lockFile 3a52ce78- .
-29 silly publish { name: 'morphbridge',
-29 silly publish   version: '1.0.3',
-29 silly publish   description: 'Resilient mesh network implementation using zmq sockets for inter protocol communication bridging',
-29 silly publish   main: 'index.js',
-29 silly publish   scripts: { test: 'cd ../../ && npm install express && npm install ws && npm install zmq && mkdir logs && node tests/server.js&  node http_node.js > http.txt& node websocket_node.js > websocket.txt& node tcp_node.js > tcp.txt& node zmq_node.js > zmq.txt& node sms_node.js > sms.txt&' },
-29 silly publish   repository: { type: 'git', url: 'https://github.com/its2mc/MorphBridge' },
-29 silly publish   dependencies: { zmq: '^2.11.1', winston: '^1.0.0' },
-29 silly publish   keywords:
-29 silly publish    [ 'MorphBridge',
-29 silly publish      'bridging',
-29 silly publish      'morph',
-29 silly publish      'iot',
-29 silly publish      'inter-protocol communication',
-29 silly publish      'mesh',
-29 silly publish      'mesh network',
-29 silly publish      'bridge' ],
-29 silly publish   author:
-29 silly publish    { name: 'PhilMc',
-29 silly publish      email: 'its2uraps@gmail.com',
-29 silly publish      url: 'https://github.com/its2mc/' },
-29 silly publish   license: 'ISC',
-29 silly publish   bugs: { url: 'https://github.com/its2mc/MorphBridge/issues' },
-29 silly publish   homepage: 'https://github.com/its2mc/MorphBridge',
-29 silly publish   readme: 'This module supports the morph bridge platform.\nIt contains the channel object and the communication object for interprocess communication.\n',
-29 silly publish   readmeFilename: 'README.md',
-29 silly publish   _id: 'morphbridge@1.0.3',
-29 silly publish   _shasum: '29af31fedd6976c3f1295ee0f25e52602cf33dd7',
-29 silly publish   _from: '.' }
-30 verbose request where is /morphbridge
-31 verbose request registry https://registry.npmjs.org/
-32 verbose request id 50d97620c1ce7109
-33 verbose url raw /morphbridge
-34 verbose url resolving [ 'https://registry.npmjs.org/', './morphbridge' ]
-35 verbose url resolved https://registry.npmjs.org/morphbridge
-36 verbose request where is https://registry.npmjs.org/morphbridge
-37 info trying registry request attempt 1 at 21:51:42
-38 http PUT https://registry.npmjs.org/morphbridge
-39 http 403 https://registry.npmjs.org/morphbridge
-40 verbose headers { 'content-type': 'application/json',
-40 verbose headers   'cache-control': 'max-age=60',
-40 verbose headers   'content-length': '95',
-40 verbose headers   'accept-ranges': 'bytes',
-40 verbose headers   date: 'Thu, 16 Jul 2015 18:51:48 GMT',
-40 verbose headers   via: '1.1 varnish',
-40 verbose headers   connection: 'keep-alive',
-40 verbose headers   'x-served-by': 'cache-lhr6333-LHR',
-40 verbose headers   'x-cache': 'MISS',
-40 verbose headers   'x-cache-hits': '0',
-40 verbose headers   'x-timer': 'S1437072708.258610,VS0,VE660' }
-41 error publish Failed PUT 403
-42 error Error: "You cannot publish over the previously published version 1.0.3." : morphbridge
-42 error     at RegClient.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
-42 error     at Request._callback (E:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
-42 error     at Request.self.callback (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
-42 error     at Request.emit (events.js:98:17)
-42 error     at Request.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
-42 error     at Request.emit (events.js:117:20)
-42 error     at IncomingMessage.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
-42 error     at IncomingMessage.emit (events.js:117:20)
-42 error     at _stream_readable.js:943:16
-42 error     at process._tickCallback (node.js:419:13)
-43 error If you need help, you may report this *entire* log,
-43 error including the npm and node versions, at:
-43 error     <http://github.com/npm/npm/issues>
-44 error System Windows_NT 6.2.9200
-45 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-46 error cwd E:\Node workspace\morphbridge
-47 error node -v v0.10.32
-48 error npm -v 1.4.28
-49 verbose exit [ 1, true ]
+5 error TypeError: Cannot call method 'trim' of undefined
+5 error     at E:\Program Files\nodejs\node_modules\npm\lib\version.js:86:24
+5 error     at E:\Program Files\nodejs\node_modules\npm\lib\utils\git.js:40:14
+5 error     at F (E:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:43:25)
+5 error     at E (E:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:46:29)
+5 error     at E:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:57:16
+5 error     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+6 error If you need help, you may report this *entire* log,
+6 error including the npm and node versions, at:
+6 error     <http://github.com/npm/npm/issues>
+7 error System Windows_NT 6.2.9200
+8 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "version" "patch"
+9 error cwd E:\Node workspace\morphbridge_module
+10 error node -v v0.10.32
+11 error npm -v 1.4.28
+12 error type non_object_property_call
+13 verbose exit [ 1, true ]

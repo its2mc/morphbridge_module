@@ -1,7 +1,7 @@
 {
   "name": "morphbridge",
   "version": "1.0.5",
-  "description": "Resilient mesh network implementation using zmq sockets for inter protocol communication bridging",
+  "description": "Resilient mesh network implementation using zmq sockets for inter protocol communication bridging.",
   "main": "index.js",
   "scripts": {
     "test": "cd ../../ && npm install express && npm install ws && npm install zmq && mkdir logs && node ../../tests/server.js&"
