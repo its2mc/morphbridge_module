@@ -8,7 +8,7 @@ xpubSock = zmq.socket('xpub'),
 hwm = 1000,
 verbose = 0;
 
-if(['win32','win64'].indexOf(process.platform)!=-1){
+if(['win32','win64','linux'].indexOf(process.platform)!=-1){
 	var pubListener = 'tcp://127.0.0.1:10001',
 	subListener = 'tcp://127.0.0.1:10002';
 }
