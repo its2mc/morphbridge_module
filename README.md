@@ -10,7 +10,7 @@ The github repository contains examples of how the module is used. Standalone no
 The plan is to add all kinds of protocols available on nodejs including zigby, tcp, mqtt, rabbitmq, bluetooth, serial, e.t.c. As long as there is a nodejs module for it, it can work with morphbridge. The mother of all bridges. 
 </p>
 <p>
-The coolest thing about morphbride is that you can start and have any node running without destroying the mesh network. Start in any order and even have some running while you are working on a new one which can join into the messages streams. Shut it down but you will still have the rest of your nodes working.
+The coolest thing about morphbridge is that you can start and have any node running without destroying the mesh network. Start in any order and even have some running while you are working on a new one which can join into the messages streams. Shut it down but you will still have the rest of your nodes working.
 </p>
 
 <h2>Prerequisites</h2>

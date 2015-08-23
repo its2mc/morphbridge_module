@@ -3,14 +3,21 @@ This document serves as the proxy that allows for internode communication
 */
 var zmq = require('morphbridge/node_modules/zmq'),
 logger = require('morphbridge').logger,
-publisher = zmq.socket('pub'),
-subscriber = zmq.socket('sub'),
 xsubSock = zmq.socket('xsub'),
 xpubSock = zmq.socket('xpub'),
 hwm = 1000,
-verbose = 0,
-pubListener = 'tcp://127.0.0.1:10001',
-subListener = 'tcp://127.0.0.1:10002';
+verbose = 0;
+
+if(['win32','win64'].indexOf(process.platform)!=-1){
+	var pubListener = 'tcp://127.0.0.1:10001',
+	subListener = 'tcp://127.0.0.1:10002';
+}
+else {
+	var pubListener = 'ipc://proxyPubListener',
+	subListener = 'ipc://proxySubListener';
+}
+
+
 
 //Logger Initialization
 logger.init();
@@ -52,3 +59,4 @@ xpubSock.on('message', function(data, bla) {
 	// We send it to subSock, so it knows to what channels to listen to
 	xsubSock.send(data);
 });
+
